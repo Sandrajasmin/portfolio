@@ -4,7 +4,7 @@ import HomePage from './pages/homepage/index'
 function App() {
     return (
         <>
-            <div className="mx-auto max-w-6xl">
+            <div className="mx-auto">
                 <Header />
                 <HomePage />
             </div>
