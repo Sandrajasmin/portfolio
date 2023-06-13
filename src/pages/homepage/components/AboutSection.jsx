@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfilePicture from '../../../assets/ProfilePicture.png'
+import ProfilePicture from '../../../assets/profilePicture.png'
 
 export default function TextWithImage() {
     return (
