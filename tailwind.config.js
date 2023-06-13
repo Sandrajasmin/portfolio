@@ -1,11 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: ["./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     fontFamily: {
       'serif': ['Libre Caslon Text'],
     },
-    extend: {},
+    colors: {
+      'grey': '#EBEAEF',
+      'black': '#0F0E0E',
+      'white': '#FDF9F9',
+    },
+    extend: {
+    },
   },
   plugins: [],
 }
+
