@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -108,7 +108,7 @@ export default function Header() {
                             >
                                 <div className="logo">
                                     <a
-                                        className="flex h-full my-5 pb-5"
+                                        className="flex h-full my-5 pb-5 lg:my-0 lg:mt-5 lg:pb-0"
                                         href="/index.html"
                                     >
                                         <span className="font-serif animate-text bg-gradient-to-t from-[#070707] via-[#ACACAC] to-[#070707] bg-clip-text text-transparent animate-in slide-in-from-top duration-1000 text-8xl">
