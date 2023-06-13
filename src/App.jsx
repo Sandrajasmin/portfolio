@@ -1,11 +1,12 @@
 import './index.css'
+import Header from './global/header'
 
 function App() {
-  return (
-    <>
-     <h1 className='text-black text-4xl'>Hello</h1>
-    </>
-  )
+    return (
+        <>
+            <Header />
+        </>
+    )
 }
 
 export default App
