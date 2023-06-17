@@ -19,11 +19,11 @@ export default function ProjectSection() {
                             <div class="text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-10">
                                 <img className="h-14 w-14 my-2" src={Logo} />
                                 <p className="text-sm my-2">
-                                    Introducing Holidaze, my Airbnb-inspired project
-                                showcasing my frontend development skills.
-                                Discover and book unique venues or list your own
-                                spaces effortlessly. Experience seamless travel
-                                and hosting at
+                                    Introducing Holidaze, my Airbnb-inspired
+                                    project showcasing my frontend development
+                                    skills. Discover and book unique venues or
+                                    list your own spaces effortlessly.
+                                    Experience seamless travel and hosting at
                                 </p>
                                 <Link
                                     to="/holidaze"

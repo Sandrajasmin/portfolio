@@ -11,16 +11,49 @@ export default class Responsive extends Component {
     render() {
         const settings = {
             infinite: true,
-            speed: 500,
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
+            vertical: true,
+            verticalSwiping: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        initialSlide: 2,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+            beforeChange: function (currentSlide, nextSlide) {
+                console.log('before change', currentSlide, nextSlide)
+            },
+            afterChange: function (currentSlide) {
+                console.log('after change', currentSlide)
+            },
         }
         return (
             <div className="mx-auto max-w-6xl px-5 my-10">
                 <div className="flex flex-col gap-10 lg:flex-row lg:items-center">
-                    <div className="flex flex-col gap-5">
-                        <div className="bg-grey p-10 drop-shadow-md">
-                            <h1 className="font-serif text-6xl text-center">
+                    <div className="flex flex-col gap-5 lg:w-1/2">
+                        <div className="bg-grey p-5 lg:p-10 drop-shadow-md">
+                            <h1 className="font-serif text-6xl text-center py-2">
                                 Rainy Days
                             </h1>
                             <p className="">
@@ -31,8 +64,14 @@ export default class Responsive extends Component {
                                 for various weather conditions. Please note that
                                 the website is currently not hosted, so the
                                 products may not be visible. However, you can
-                                still explore the design and user interface of
-                                RainyDays at https://rainydays-sj.netlify.app.
+                                still explore the design and user interface of .
+                                <a
+                                    href="https://rainydays-sj.netlify.app."
+                                    target="_blank"
+                                    className=" underline"
+                                >
+                                    RainyDays!
+                                </a>
                                 Thank you for your understanding.
                             </p>
                         </div>
@@ -40,12 +79,14 @@ export default class Responsive extends Component {
                         <div className="flex gap-5">
                             <a
                                 href="https://github.com/Sandrajasmin/first-year-cross-course-assignment-brief-one"
+                                target="_blank"
                                 className="bg-grey drop-shadow-md text-black w-full p-2 flex justify-center"
                             >
                                 <i class="fa-brands fa-github fa-2x"></i>
                             </a>
                             <a
                                 href="https://www.figma.com/file/94nJeJKYNzNO9Mefb6OEee/2021-10-04_Design1_ma2_Sandra-MollerSorensen_fp?type=design&node-id=0%3A1&t=AZbp0qQvrxZJiaDR-1"
+                                target="_blank"
                                 className="bg-grey drop-shadow-md text-black w-full p-2 flex justify-center"
                             >
                                 <i class="fa-brands fa-figma fa-2x"></i>
