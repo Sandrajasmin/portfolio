@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
+import { NavLink, useLocation } from 'react-router-dom'
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const { pathname } = useLocation()
+    const isHomePage = pathname === '/'
 
     function toggleMenu() {
         setIsMenuOpen(!isMenuOpen)
@@ -107,9 +110,9 @@ export default function Header() {
                                 className="flex flex-1 justify-center lg:justify-start"
                             >
                                 <div className="logo">
-                                    <Link
+                                    <NavLink
                                         className="flex h-full mt-5 pb-5 lg:my-0 lg:mt-5 lg:pb-0"
-                                        to="hero-section"
+                                        to="/"
                                     >
                                         <span className="font-serif animate-text bg-gradient-to-t from-[#070707] via-[#ACACAC] to-[#070707] bg-clip-text text-transparent animate-in slide-in-from-top duration-1000 text-8xl">
                                             S
@@ -117,30 +120,30 @@ export default function Header() {
                                         <span className="font-serif animate-text bg-gradient-to-r from-[#070707] via-[#ACACAC] to-[#000000] bg-clip-text text-transparent text-8xl mt-[21.5px] -ml-[14px]">
                                             J
                                         </span>
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                             <div className="sm:ml-6 sm:block hidden">
                                 <div className="flex space-x-4 items-start pt-16">
-                                    <Link
-                                        to="about-section"
+                                    <NavLink
+                                        to={isHomePage ? 'about-section' : '/'}
+                                        smooth={true}
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         About
-                                    </Link>
-
-                                    <Link
-                                        to="project-section"
+                                    </NavLink>
+                                    <NavLink
+                                        to={isHomePage ? 'project-section' : '/'}
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         Projects
-                                    </Link>
-                                    <Link
-                                        to="contact-section"
+                                    </NavLink>
+                                    <NavLink
+                                    to={isHomePage ? 'contact-section' : '/'}
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         Contact
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -153,13 +156,14 @@ export default function Header() {
                     }`}
                 >
                     <nav className="space-y-1 flex flex-col items-center">
-                        <Link
-                            to="about-section"
+                        <NavLink
+                            to={isHomePage ? 'about-section' : '/'}
+                            smooth={true}
                             className="text-black hover:bg-grey block px-3 py-2 rounded-md text-lg hover:font-medium"
                             aria-current="page"
                         >
                             About
-                        </Link>
+                        </NavLink>
 
                         <Link
                             to="project-section"

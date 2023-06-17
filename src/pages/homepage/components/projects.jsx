@@ -71,9 +71,9 @@ export default function ProjectSection() {
                                     look at my project at
                                     https://biddify.netlify.app/
                                 </p>
-                                <button class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
+                                <Link to="/biddify" class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
                                     Read More
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -101,9 +101,9 @@ export default function ProjectSection() {
                                     experience. Take a look at
                                     https://markethouse.netlify.app
                                 </p>
-                                <button class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
+                                <Link to="/markethouse" class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
                                     Read More
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -129,9 +129,9 @@ export default function ProjectSection() {
                                     https://rainydays-sj.netlify.app. Thank you
                                     for your understanding.
                                 </p>
-                                <button class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
+                                <Link to="/rainydays" class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
                                     Read More
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
