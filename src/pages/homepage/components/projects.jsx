@@ -4,9 +4,9 @@ import BiddifyLogo from '../../../assets/biddifyLogo.png'
 import MarkethouseLogo from '../../../assets/markethouseLogo.png'
 import RainydaysLogo from '../../../assets/rainydaysLogo.png'
 
-export default function TextWithImage() {
+export default function ProjectSection() {
     return (
-        <>
+        <div id='project-section'>
             <section class="grid gap-x-16 lg:gap-x-5 text-white gap-5 my-10 lg:grid-cols-2 mx-auto max-w-6xl place-items-center">
                 <div class="w-[320px] lg:w-full h-[340px] bg-transparent cursor-pointer group perspective">
                     <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
@@ -114,11 +114,10 @@ export default function TextWithImage() {
                             <div class="text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-10">
                                 <img className=" my-2" src={RainydaysLogo} />
                                 <p className="text-sm my-2">
-                                    RainyDays, my first frontend
-                                    project developed during my studies at
-                                    Noroff. RainyDays is an
-                                    online platform that offers a range of
-                                    jackets for various weather
+                                    RainyDays, my first frontend project
+                                    developed during my studies at Noroff.
+                                    RainyDays is an online platform that offers
+                                    a range of jackets for various weather
                                     conditions. Please note that the website is
                                     currently not hosted, so the products may
                                     not be visible. However, you can still
@@ -134,6 +133,6 @@ export default function TextWithImage() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }

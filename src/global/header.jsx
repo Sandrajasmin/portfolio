@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -106,9 +107,9 @@ export default function Header() {
                                 className="flex flex-1 justify-center lg:justify-start"
                             >
                                 <div className="logo">
-                                    <a
-                                        className="flex h-full my-5 pb-5 lg:my-0 lg:mt-5 lg:pb-0"
-                                        href="/index.html"
+                                    <Link
+                                        className="flex h-full mt-5 pb-5 lg:my-0 lg:mt-5 lg:pb-0"
+                                        to="hero-section"
                                     >
                                         <span className="font-serif animate-text bg-gradient-to-t from-[#070707] via-[#ACACAC] to-[#070707] bg-clip-text text-transparent animate-in slide-in-from-top duration-1000 text-8xl">
                                             S
@@ -116,30 +117,30 @@ export default function Header() {
                                         <span className="font-serif animate-text bg-gradient-to-r from-[#070707] via-[#ACACAC] to-[#000000] bg-clip-text text-transparent text-8xl mt-[21.5px] -ml-[14px]">
                                             J
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="sm:ml-6 sm:block hidden">
                                 <div className="flex space-x-4 items-start pt-16">
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to="about-section"
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         About
-                                    </a>
+                                    </Link>
 
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to="project-section"
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         Projects
-                                    </a>
-                                    <a
-                                        href="#"
+                                    </Link>
+                                    <Link
+                                        to="contact-section"
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         Contact
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -147,30 +148,30 @@ export default function Header() {
                 </div>
                 <div
                     id="mobile-menu"
-                    className={`sm:hidden ${isMenuOpen ? 'block' : 'hidden'}`}
+                    className={`sm:hidden bg-inherit h-screen ${isMenuOpen ? 'block' : 'hidden'}`}
                 >
                     <nav className="space-y-1 flex flex-col items-center">
-                        <a
-                            href="#"
+                        <Link
+                            to="about-section"
                             className="text-black hover:bg-grey block px-3 py-2 rounded-md text-lg hover:font-medium"
                             aria-current="page"
                         >
                             About
-                        </a>
+                        </Link>
 
-                        <a
-                            href="#"
+                        <Link
+                            to="project-section"
                             className="text-black hover:bg-grey block px-3 py-2 rounded-md text-lg hover:font-medium"
                         >
                             Projects
-                        </a>
+                        </Link>
 
-                        <a
-                            href="#"
+                        <Link
+                            to="contact-section"
                             className="text-black hover:bg-grey block px-3 py-2 rounded-md text-lg hover:font-medium"
                         >
                             Contact
-                        </a>
+                        </Link>
                     </nav>
                 </div>
             </header>
