@@ -9,7 +9,7 @@ export default function Homepage() {
         <>
             <HeroSection />
             <AboutSection />
-            <Projects  />
+            <Projects />
             <Contact />
         </>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../../../assets/holidazeLogo.png'
 import BiddifyLogo from '../../../assets/biddifyLogo.png'
 import MarkethouseLogo from '../../../assets/markethouseLogo.png'
@@ -6,7 +7,7 @@ import RainydaysLogo from '../../../assets/rainydaysLogo.png'
 
 export default function ProjectSection() {
     return (
-        <div id='project-section'>
+        <div id="project-section">
             <section class="grid gap-x-16 lg:gap-x-5 text-white gap-5 my-10 lg:grid-cols-2 mx-auto max-w-6xl place-items-center">
                 <div class="w-[320px] lg:w-full h-[340px] bg-transparent cursor-pointer group perspective">
                     <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
@@ -33,9 +34,12 @@ export default function ProjectSection() {
                                     booking with Holidaze, where convenience
                                     meets innovation.
                                 </p>
-                                <button class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
+                                <Link
+                                    to="/holidaze"
+                                    class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125"
+                                >
                                     Read More
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
