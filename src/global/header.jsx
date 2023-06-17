@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll';
+import { Link } from 'react-scroll'
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,7 +9,7 @@ export default function Header() {
     }
 
     return (
-        <div className="sticky top-0 z-50">
+        <div className="sticky top-0 z-50 bg-[#ffffff]">
             <header className="">
                 <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
                     <div className="relative flex items-center justify-center lg:justify-start">
@@ -148,7 +148,9 @@ export default function Header() {
                 </div>
                 <div
                     id="mobile-menu"
-                    className={`sm:hidden bg-inherit h-screen ${isMenuOpen ? 'block' : 'hidden'}`}
+                    className={`sm:hidden bg-inherit h-screen ${
+                        isMenuOpen ? 'block' : 'hidden'
+                    }`}
                 >
                     <nav className="space-y-1 flex flex-col items-center">
                         <Link

@@ -1,12 +1,13 @@
 import './index.css'
+import Router from './routes/router'
 import Header from './global/header'
-import HomePage from './pages/homepage/index'
+
 function App() {
     return (
         <>
             <div className="mx-auto">
                 <Header />
-                <HomePage />
+                <Router />
             </div>
         </>
     )
