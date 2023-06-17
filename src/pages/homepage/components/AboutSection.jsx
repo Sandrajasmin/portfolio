@@ -1,10 +1,10 @@
 import React from 'react'
 import ProfilePicture from '../../../assets/profilePicture.png'
 
-export default function TextWithImage() {
+export default function AboutSection() {
     return (
         <>
-            <div className="bg-grey">
+            <div className="bg-grey" id='about-section'>
                 <div className="max-w-6xl mx-auto py-16 px-5 flex flex-col gap-5 items-center lg:flex-row">
                     <div className="flex flex-col items-center gap-5">
                         <p className="text-3xl">About me</p>
