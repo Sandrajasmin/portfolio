@@ -6,7 +6,7 @@ export default function TextWithImage() {
         <>
             <div className="bg-grey">
                 <div className="max-w-6xl mx-auto py-16 px-5 flex flex-col gap-5 items-center lg:flex-row">
-                    <div className='flex flex-col items-center gap-5'>
+                    <div className="flex flex-col items-center gap-5">
                         <p className="text-3xl">About me</p>
                         <span>
                             <hr className="w-40 text-black border border-black"></hr>
