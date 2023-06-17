@@ -19,20 +19,11 @@ export default function ProjectSection() {
                             <div class="text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-10">
                                 <img className="h-14 w-14 my-2" src={Logo} />
                                 <p className="text-sm my-2">
-                                    Introducing Holidaze, a modern frontend
-                                    accommodation booking application that was
-                                    developed as an impressive school project
-                                    during my time at Noroff School of
-                                    Technology. This project aimed to create an
-                                    Airbnb-like platform where users can
-                                    seamlessly browse and book various
-                                    accommodation options for their stay.
-                                    Additionally, venue managers have the
-                                    ability to register, allowing them to
-                                    effortlessly create and manage their own
-                                    rental properties. Explore the future of
-                                    booking with Holidaze, where convenience
-                                    meets innovation.
+                                    Introducing Holidaze, my Airbnb-inspired project
+                                showcasing my frontend development skills.
+                                Discover and book unique venues or list your own
+                                spaces effortlessly. Experience seamless travel
+                                and hosting at
                                 </p>
                                 <Link
                                     to="/holidaze"
@@ -65,13 +56,12 @@ export default function ProjectSection() {
                                     the thrill of selling. With a user-friendly
                                     interface, you can effortlessly explore a
                                     wide range of items, place bids, and stay
-                                    updated in real-time. Experience the
-                                    excitement of auctions with Biddify, where
-                                    bidding and selling meet seamlessly. Take a
-                                    look at my project at
-                                    https://biddify.netlify.app/
+                                    updated in real-time.
                                 </p>
-                                <Link to="/biddify" class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
+                                <Link
+                                    to="/biddify"
+                                    class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125"
+                                >
                                     Read More
                                 </Link>
                             </div>
@@ -98,10 +88,12 @@ export default function ProjectSection() {
                                     conveniently browse and purchase a variety
                                     of tech products. Explore the latest gadgets
                                     and electronics, enjoy a seamless shopping
-                                    experience. Take a look at
-                                    https://markethouse.netlify.app
+                                    experience.
                                 </p>
-                                <Link to="/markethouse" class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
+                                <Link
+                                    to="/markethouse"
+                                    class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125"
+                                >
                                     Read More
                                 </Link>
                             </div>
@@ -122,14 +114,12 @@ export default function ProjectSection() {
                                     developed during my studies at Noroff.
                                     RainyDays is an online platform that offers
                                     a range of jackets for various weather
-                                    conditions. Please note that the website is
-                                    currently not hosted, so the products may
-                                    not be visible. However, you can still
-                                    explore the design and user interface of
-                                    https://rainydays-sj.netlify.app. Thank you
-                                    for your understanding.
+                                    conditions.
                                 </p>
-                                <Link to="/rainydays" class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
+                                <Link
+                                    to="/rainydays"
+                                    class="bg-white text-base px-6 py-1 font-medium text-black rounded-sm absolute -bottom-5 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125"
+                                >
                                     Read More
                                 </Link>
                             </div>

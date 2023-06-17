@@ -133,13 +133,17 @@ export default function Header() {
                                         About
                                     </NavLink>
                                     <NavLink
-                                        to={isHomePage ? 'project-section' : '/'}
+                                        to={
+                                            isHomePage ? 'project-section' : '/'
+                                        }
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         Projects
                                     </NavLink>
                                     <NavLink
-                                    to={isHomePage ? 'contact-section' : '/'}
+                                        to={
+                                            isHomePage ? 'contact-section' : '/'
+                                        }
                                         className="text-black hover:font-bold px-3 rounded-md text-base font-body"
                                     >
                                         Contact

@@ -24,11 +24,18 @@ export default class Responsive extends Component {
                                 Holidaze
                             </h1>
                             <p className="">
-                                Introducing Holidaze, my Airbnb-inspired project
-                                showcasing my frontend development skills.
-                                Discover and book unique venues or list your own
-                                spaces effortlessly. Experience seamless travel
-                                and hosting at
+                                Introducing Holidaze, a modern frontend
+                                accommodation booking application that was
+                                developed as an impressive school project during
+                                my time at Noroff School of Technology. This
+                                project aimed to create an Airbnb-like platform
+                                where users can seamlessly browse and book
+                                various accommodation options for their stay.
+                                Additionally, venue managers have the ability to
+                                register, allowing them to effortlessly create
+                                and manage their own rental properties. Explore
+                                the future of booking with Holidaze, where
+                                convenience meets innovation.
                                 https://holidaze-navy.vercel.app/.
                             </p>
                         </div>
