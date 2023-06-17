@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 ## Sandra's Portfolio
 This is my portfolio website, created to showcase my projects, skills, and experience to potential employers or clients.
