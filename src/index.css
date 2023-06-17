@@ -50,11 +50,18 @@
         }
     }
 
-    .animate-opacity {
-        animation: animate-opacity 1.5s ease-in-out;
+    .animate-image {
+        animation: animate-opacity 2s ease-in-out;
     }
 
-    .animate-opacity1 {
-        animation: animate-opacity1 2s ease-in-out;
-    }
+
+        @keyframes animate-image {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
 }

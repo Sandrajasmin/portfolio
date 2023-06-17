@@ -1,4 +1,5 @@
 import './index.css'
+import './style.css'
 import Router from './routes/router'
 import Header from './global/header'
 

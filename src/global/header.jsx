@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import React, { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import { animateScroll as scroll } from 'react-scroll'
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,99 +11,20 @@ export default function Header() {
         setIsMenuOpen(!isMenuOpen)
     }
 
+    function closeMenu() {
+        setIsMenuOpen(false)
+    }
+
+    useEffect(() => {
+        // Scroll to top on page load
+        scroll.scrollToTop()
+    }, [pathname]) // Trigger effect when pathname changes
+
     return (
         <div className="sticky top-0 z-50 bg-[#ffffff]">
             <header className="">
                 <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
                     <div className="relative flex items-center justify-center lg:justify-start">
-                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                            <button
-                                type="button"
-                                className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none"
-                                aria-controls="mobile-menu"
-                                aria-expanded={isMenuOpen ? 'true' : 'false'}
-                                onClick={toggleMenu}
-                            >
-                                <span className="sr-only">Open main menu</span>
-                                <svg
-                                    className={`block h-6 w-6 ${
-                                        isMenuOpen ? 'hidden' : ''
-                                    }`}
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth="1.5"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                                    />
-                                </svg>
-                                <svg
-                                    className={`h-6 w-6 ${
-                                        isMenuOpen ? '' : 'hidden'
-                                    }`}
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth="1.5"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                            <button
-                                type="button"
-                                className={`inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none ${
-                                    isMenuOpen ? 'rotate-90' : ''
-                                }`}
-                                aria-controls="mobile-menu"
-                                aria-expanded={isMenuOpen ? 'true' : 'false'}
-                                onClick={toggleMenu}
-                            >
-                                <span className="sr-only">Open main menu</span>
-                                <svg
-                                    className={`block h-6 w-6 ${
-                                        isMenuOpen ? 'hidden' : ''
-                                    }`}
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth="1.5"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                                    />
-                                </svg>
-                                <svg
-                                    className={`h-6 w-6 ${
-                                        isMenuOpen ? '' : 'hidden'
-                                    }`}
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth="1.5"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
                         <div className="flex">
                             <div
                                 id="logo-mobile"
@@ -152,37 +73,6 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    id="mobile-menu"
-                    className={`sm:hidden bg-inherit h-screen ${
-                        isMenuOpen ? 'block' : 'hidden'
-                    }`}
-                >
-                    <nav className="space-y-1 flex flex-col items-center">
-                        <NavLink
-                            to={isHomePage ? 'about-section' : '/'}
-                            smooth={true}
-                            className="text-black hover:bg-grey block px-3 py-2 rounded-md text-lg hover:font-medium"
-                            aria-current="page"
-                        >
-                            About
-                        </NavLink>
-
-                        <Link
-                            to="project-section"
-                            className="text-black hover:bg-grey block px-3 py-2 rounded-md text-lg hover:font-medium"
-                        >
-                            Projects
-                        </Link>
-
-                        <Link
-                            to="contact-section"
-                            className="text-black hover:bg-grey block px-3 py-2 rounded-md text-lg hover:font-medium"
-                        >
-                            Contact
-                        </Link>
-                    </nav>
                 </div>
             </header>
         </div>
