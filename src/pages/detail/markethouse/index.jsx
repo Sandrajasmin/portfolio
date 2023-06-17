@@ -29,8 +29,9 @@ export default class Responsive extends Component {
                                 platform where you can conveniently browse and
                                 purchase a variety of tech products. Explore the
                                 latest gadgets and electronics, enjoy a seamless
-                                shopping experience, and elevate your tech game. Feel free to explore the two different themes on the websitez
-                                https://markethouse.netlify.app/
+                                shopping experience, and elevate your tech game.
+                                Feel free to explore the two different themes on
+                                the websitez https://markethouse.netlify.app/
                             </p>
                         </div>
                         <div className="flex gap-5">
@@ -50,39 +51,19 @@ export default class Responsive extends Component {
                     </div>
                     <Slider {...settings} className="lg:w-1/2">
                         <div className="h-[400px] w-[400px]">
-                            <img
-                                className=""
-                                src={Hero}
-                                alt=""
-                            />
+                            <img className="" src={Hero} alt="" />
                         </div>
                         <div className="h-[400px] w-[400px]">
-                            <img
-                                className=""
-                                src={Detail}
-                                alt=""
-                            />
+                            <img className="" src={Detail} alt="" />
                         </div>
                         <div className="h-[400px] w-[400px]">
-                            <img
-                                className=""
-                                src={Checkout}
-                                alt=""
-                            />
+                            <img className="" src={Checkout} alt="" />
                         </div>
                         <div className="h-[400px] w-[400px]">
-                            <img
-                                className=""
-                                src={HeroDark}
-                                alt=""
-                            />
+                            <img className="" src={HeroDark} alt="" />
                         </div>
                         <div className="h-[400px] w-[400px]">
-                            <img
-                                className=""
-                                src={Search}
-                                alt=""
-                            />
+                            <img className="" src={Search} alt="" />
                         </div>
                     </Slider>
                 </div>
